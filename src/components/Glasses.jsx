@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import model from "./../assets/model.jpg";
 
 export const Glasses = () => {
   const list = [
@@ -50,7 +51,7 @@ export const Glasses = () => {
   return (
     <div className="flex items-center">
       <div className="w-1/2 relative">
-        <img src="./public/glassesImage/model.jpg" alt="" />
+        <img src={model} alt="" />
         {glasses && (
           <img
             src={glasses}
